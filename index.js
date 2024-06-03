@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const express = require('express');
 const app = express();
-const port = 9433;
+const port = process.env.PORT || 8000;
 
 // used for session cookie
 const session = require('express-session');
