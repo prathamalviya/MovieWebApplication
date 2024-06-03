@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #111;
+    color: #fff;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav1 li {
+    list-style: none;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-size: 20px;
+}
+
+.navbar .nav1 li a {
+    text-decoration: none;
+    color: #ff3333;
+}
+
+main {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #333;
+}
+
+.title {
+    padding-right: 2%;
+}
+
+.search-container #movie-name {
+    padding: 0.25% 1.5%;
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #ff3333;
+}
+
+input {
+    padding: 0.1% 0.1%;
+    width: 30%;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #ff3333;
+}
+
+.search-container button {
+    margin: 0 2%;
+    width: 10%;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+}
+
+.movie-info h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2%;
+}
+
+.movie-info-1 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-info-1 .movie-info li {
+    flex: 1 1 30%;
+    padding: 2% 0%;
+    padding-right: 10%;
+    list-style: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+#result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+}
+
+.info {
+    display: block;
+    padding: 5%;
+}
+
+p {
+    padding: 0.8%;
+}
+
+.line1 {
+    font-weight: bold;
+    color: #ff3333;
+}
+
+#add-to-playlist {
+    text-align: center;
+    margin-top: 2%;
+}
+
+#add-to-playlist #radio-tag {
+    text-align: center;
+    padding: 2%;
+    width: 1%;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #ff3333;
+}
+
+#palylist-button {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #b50000, #ff3333, #ff6666, #b50000);
+    background-size: 800% 400%;
+    padding: 1.6vh 3.2vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin: auto;
+    width: 30%;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+#palylist-button:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+}
+
+#palylist-button:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+}
+
+#note {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff3333;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #result {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Add any additional styles for smaller screens here */
+}
